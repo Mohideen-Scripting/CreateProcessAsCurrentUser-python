@@ -12,10 +12,11 @@ Description:
 Examples of how to use this script:
 
   1. if you want to open up notepad++ in the current user session, call the start_process_as_current_user as shown below,
-  
+     ```python
       start_process_as_current_user(r"C:\Program Files\Notepad++\notepad++.exe")
+     ```
   
-  2. if you want to execute powershell commands in the current user session, call the start_process_as_current_user as shown below,
+  3. if you want to execute powershell commands in the current user session, call the start_process_as_current_user as shown below,
   
       start_process_as_current_user(r'C:\Windows\System32\WindowsPowerShell\v1.0\powershell.exe', r'"C:\Windows\System32\WindowsPowerShell\v1.0\powershell.exe" -ExecutionPolicy Bypass -WindowStyle Hidden -command "whoami /priv | Out-File -filepath C:\Users\coding\Desktop\testing.txt"')
   
@@ -23,7 +24,7 @@ Examples of how to use this script:
   
       start_process_as_current_user(AppPath='powershell.exe', cmdLine=r'powershell.exe -ExecutionPolicy Bypass -WindowStyle Hidden -command "whoami /priv | Out-File -filepath C:\Users\coding\Desktop\testing.txt"', workDir=r"C:\Windows\System32\WindowsPowerShell\v1.0")
   
-  3. if you want to execute cmd commands in the current user session, call the start_process_as_current_user as shown below,
+  4. if you want to execute cmd commands in the current user session, call the start_process_as_current_user as shown below,
      
      start_process_as_current_user(AppPath=r'cmd.exe',cmdLine=r'cmd.exe /c "whoami /priv >> C:\Users\coding\Desktop\testing.txt',workDir=r"C:\Windows\System32")
 
