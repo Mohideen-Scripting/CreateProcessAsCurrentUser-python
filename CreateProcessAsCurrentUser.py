@@ -72,13 +72,7 @@ class PROCESS_INFORMATION(ctypes.Structure):
         ("hThread", ctypes.c_void_p),
         ("dwProcessId", wintypes.DWORD),
         ("dwThreadId", wintypes.DWORD),
-    ]
-
-class TOKEN_PRIVILEGES(ctypes.Structure):      		       
-    _fields_ = [                                                
-                ('PrivilegeCount',  wintypes.DWORD),		       
-                ('Privileges',      wintypes.DWORD * 3)                   
-                ]                        
+    ]           
                             
 class STARTUPINFO(ctypes.Structure):
     _fields_ = [
