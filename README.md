@@ -31,8 +31,8 @@ Examples of how to use this script:
 
    
 # Feature updates - 28/05/2024:
-  ## Redirect Output and Error for Child Process:
-    * Now you can redirect output and error streams of the child process initiated by the script. so, you don't need to save the output in a file like this 'cmd.exe /c "whoami /priv >> C:\Users\coding\Desktop\testing.txt'. all you have to do to redirect output and error stream is to set CreatePIPE_and_Redirect_OUTPUT       to True. checkout the below example of how to do it:
+  ### Redirect Output and Error for Child Process:
+    Now you can redirect output and error streams of the child process initiated by the script. so, you don't need to save the output in a file like this 'cmd.exe /c "whoami /priv >> C:\Users\coding\Desktop\testing.txt'. all you have to do to redirect output and error stream is to set CreatePIPE_and_Redirect_OUTPUT       to True. checkout the below example of how to do it:
     ```python
       start_process_as_current_user(AppPath=r'cmd.exe',cmdLine=r'cmd.exe /c "whoami /priv"',workDir=r"C:\Windows\System32", visible=False, CreatePIPE_and_Redirect_OUTPUT=True)
      ```
