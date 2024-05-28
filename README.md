@@ -1,15 +1,15 @@
 # CreateProcessAsCurrentUser-python
 
-Description:
-  This script enables you to run a process within the current user session. Special thanks to [murrayju/CreateProcessAsUser](https://github.com/murrayju/CreateProcessAsUser) for providing the inspiration and foundation, which I've implemented in Python.
+**Description:**
+
+This script enables you to run a process within the current user session. Special thanks to [murrayju/CreateProcessAsUser](https://github.com/murrayju/CreateProcessAsUser) for providing the inspiration and foundation, which I've implemented in Python.
   
-  This script is very useful when your RMM tool supports Python scripting but lacks the capability to execute scripts with the privileges of the currently logged-in user.  It's also very useful when you need to initiate a process within the current user session from a different session, such as a Windows service running in session 0 with a GUI, enabling user 
-  visibility and interaction.
+This script is very useful when your RMM tool supports Python scripting but lacks the capability to execute scripts with the privileges of the currently logged-in user.  It's also very useful when you need to initiate a process within the current user session from a different session, such as a Windows service running in session 0 with a GUI, enabling user visibility and interaction.
 
 **NOTE:**
   This script must run with system privilege to initiate process within the current user session
 
-Examples of how to use this script:
+###Examples of how to use this script:
 
   1. if you want to open up notepad++ in the current user session, call the start_process_as_current_user as shown below,
      ```python
