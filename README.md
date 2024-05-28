@@ -56,10 +56,9 @@ Examples of how to use this script:
 
   If I mistakenly give the wrong syntax like this "whoiam /rpiv", you will get the following error:
   
-
-          Error for the process created using CreateProcessAsUserW:
-           'whoiam' is not recognized as an internal or external command,
-          operable program or batch file.
-        
-         Exit code for the process created using CreateProcessAsUserW: 1
+      Error for the process created using CreateProcessAsUserW:
+       'whoiam' is not recognized as an internal or external command,
+      operable program or batch file.
+      
+      Exit code for the process created using CreateProcessAsUserW: 1
 
