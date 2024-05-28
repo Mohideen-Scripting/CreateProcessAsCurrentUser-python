@@ -37,7 +37,7 @@ Examples of how to use this script:
       start_process_as_current_user(AppPath=r'cmd.exe',cmdLine=r'cmd.exe /c "whoami /priv"',workDir=r"C:\Windows\System32", visible=False, CreatePIPE_and_Redirect_OUTPUT=True)
   ```
   if you run the above code, you will get the following output:
-  <blockquote>
+<blockquote>
   Output for the process created using CreateProcessAsUserW:
 
   PRIVILEGES INFORMATION
@@ -52,14 +52,14 @@ Examples of how to use this script:
   SeTimeZonePrivilege           Change the time zone                 Disabled
         
   Exit code for the process created using CreateProcessAsUserW: 0
-  </blockquote>
+</blockquote>
 
   If I mistakenly give the wrong syntax like this "whoiam /rpiv", you will get the following error:
   
-  <blockquote>
+<blockquote>
     Error for the process created using CreateProcessAsUserW:
      'whoiam' is not recognized as an internal or external command,
     operable program or batch file.
   
    Exit code for the process created using CreateProcessAsUserW: 1
-  </blockquote>
+</blockquote>
