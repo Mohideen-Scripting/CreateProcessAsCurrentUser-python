@@ -197,7 +197,7 @@ def get_current_user_token(hUserToken):
         wtsapi32.WTSFreeMemory(pSessionInfo)
 
     if activeSessionId == INVALID_SESSION_ID:
-        activeSessionId = wtsapi32.WTSGetActiveConsoleSessionId()
+        activeSessionId = kernel32.WTSGetActiveConsoleSessionId()
 
     if wtsapi32.WTSQueryUserToken(activeSessionId, ctypes.byref(hImpersonationToken)):
         bResult = advapi32.DuplicateTokenEx(hImpersonationToken, 0, None, SECURITY_IMPERSONATION_LEVEL.SecurityImpersonation, TOKEN_TYPE.TokenPrimary, ctypes.byref(hUserToken))
